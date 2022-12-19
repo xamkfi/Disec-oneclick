@@ -1,0 +1,12 @@
+image: eclipse-temurin:17-jdk
+
+pipelines:
+  default:
+    - step:
+        name: Build and Test
+        caches:
+          - maven
+        script:
+          - ./mvnw -e -B -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn verify
+        artifacts:
+          - '**/target/*.jar'
