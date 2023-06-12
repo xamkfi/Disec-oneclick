@@ -3,11 +3,13 @@ package fi.disec.csip;
 import org.junit.jupiter.api.Test;
 import org.roda_project.commons_ip2.validator.EARKSIPValidator;
 import org.roda_project.commons_ip2.validator.reporter.ValidationReportOutputJson;
+import org.roda_project.commons_ip2.validator.state.MetsValidatorState;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -34,9 +36,15 @@ class SIPToAIPConverterTest {
             assertTrue(Files.size(tempFile) > 0);
             final ByteArrayOutputStream baos = new ByteArrayOutputStream();
             final ValidationReportOutputJson jsonReporter = new ValidationReportOutputJson(tempFile, baos);
+            jsonReporter.setIpType("AIP");
             final EARKSIPValidator earksipValidator = new EARKSIPValidator(jsonReporter);
+            Field metsValidatorState = earksipValidator.getClass().getDeclaredField("metsValidatorState");
+            metsValidatorState.setAccessible(true);
+            ((MetsValidatorState) metsValidatorState.get(earksipValidator)).setIpType("AIP");
             final boolean isValid = earksipValidator.validate();
             assertTrue(isValid, baos.toString(StandardCharsets.UTF_8));
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            throw new RuntimeException(e);
         } finally {
             Files.deleteIfExists(tempFile);
         }
