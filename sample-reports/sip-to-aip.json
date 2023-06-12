@@ -1,0 +1,2207 @@
+{
+  "header": {
+    "title": "Validation Report",
+    "specifications": [
+      {
+        "id": "CSIP-2.0.4",
+        "url": "https://github.com/DILCISBoard/E-ARK-CSIP/releases/tag/v2.0.4"
+      },
+      {
+        "id": "AIP-2.0.4",
+        "url": "https://github.com/DILCISBoard/E-ARK-AIP/releases/tag/v2.0.4"
+      }
+    ],
+    "version_commons_ip": null,
+    "date": "2023-06-12T15:37:37.043+03:00",
+    "path": "/var/folders/jz/zt1bc8vs3xn_9nx2vbb7kmlr0000gn/T/c5bfb33b-3577-4a3b-ba79-3fe509f4cb6f17295838601327098147aip.zip"
+  },
+  "validation": [
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR1",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "Any Information Package MUST be included within a single physical root folder (known as the “Information Package root folder”). For packages presented in an archive format, see CSIPSTR3, the archive MUST unpack to a single root folder.",
+      "cardinality": "",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR2",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The Information Package root folder SHOULD be named with the ID or name of the Information Package, that is the value of the package METS.xml’s root <mets> element’s @OBJID attribute.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [],
+        "warnings": [
+          "Requirement check was skipped as it will be checked under CSIP1"
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR3",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The Information Package root folder MAY be compressed (for example by using TAR or ZIP). Which specific compression format to use needs to be stated in the Submission Agreement.",
+      "cardinality": "",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": [
+          "Information package is compressed in ZIP format"
+        ]
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR4",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The Information Package root folder MUST include a file named METS.xml. This file MUST contain metadata that identifies the package, provides a high-level package description, and describes its structure, including pointers to constituent representations.",
+      "cardinality": "",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR5",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The Information Package root folder SHOULD include a folder named metadata, which SHOULD include metadata relevant to the whole package.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR6",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "If preservation metadata are available, they SHOULD be included in sub-folder preservation.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR7",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "If descriptive metadata are available, they SHOULD be included in sub-folder descriptive.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR8",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "If any other metadata are available, they MAY be included in separate sub-folders, for example an additional folder named other.",
+      "cardinality": "",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": [
+          "If any other metadata are available, they MAY be included in separate sub-folders, for example an additional folder named other."
+        ]
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR9",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The Information Package folder SHOULD include a folder named representations.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "FAILED",
+        "issues": [],
+        "warnings": [
+          "The Information Package folder SHOULD include a folder named representations."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR10",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The representations folder SHOULD include a sub-folder for each individual representation (i.e. the “representation folder”). Each representation folder should have a string name that is unique within the package scope. For example the name of the representation and/or its creation date might be good candidates as a representation sub-folder name.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "FAILED",
+        "issues": [],
+        "warnings": [
+          "The representations folder SHOULD include a sub-folder for each individual representation."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR11",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The representation folder SHOULD include a sub-folder named data which MAY include all data constituting the representation.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "FAILED",
+        "issues": [],
+        "warnings": [
+          "The representation folder SHOULD include a sub-folder named data which MAY include all data constituting the representation"
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR12",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The representation folder SHOULD include a metadata file named METS.xml which includes information about the identity and structure of the representation and its components. The recommended best practice is to always have a METS.xml in the representation folder.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR13",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The representation folder SHOULD include a sub-folder named metadata which MAY include all metadata about the specific representation.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "FAILED",
+        "issues": [],
+        "warnings": [
+          "The representation folder SHOULD include a sub-folder named metadata which MAY include all metadata about the specific representation."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR14",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "The Information Package MAY be extended with additional sub-folders.",
+      "cardinality": "",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR15",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "We recommend including all XML schema documents for any structured metadata within package. These schema documents SHOULD be placed in a sub-folder called schemas within the Information Package root folder and/or the representation folder.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIPSTR16",
+      "name": "CSIP Information Package folder structure",
+      "location": "",
+      "description": "We recommend including any supplementary documentation for the package or a specific representation within the package. Supplementary documentation SHOULD be placed in a sub-folder called documentation within the Information Package root folder and/or the representation folder.",
+      "cardinality": "",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP0",
+      "name": "METS Schema",
+      "location": "",
+      "description": "Validation of METS Schema",
+      "cardinality": "",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [
+          ""
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP1",
+      "name": "Package Identifier",
+      "location": "mets/@OBJID",
+      "description": "The mets/@OBJID attribute is mandatory, its value is a string identifier for the METS document. For the package METS document, this should be the name/ID of the package, i.e. the name of the package root folder. For a representation level METS document this value records the name/ID of the representation, i.e. the name of the top-level representation folder.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP2",
+      "name": "Content Category",
+      "location": "mets/@TYPE",
+      "description": "The mets/@TYPE attribute MUST be used to declare the category of the content held in the package, e.g. book, journal, stereograph, video, etc.. Legal values are defined in a fixed vocabulary. When the content category used falls outside of the defined vocabulary the mets/@TYPE value must be set to “OTHER” and the specific value declared in mets/@csip:OTHERTYPE. The vocabulary will develop under the curation of the DILCIS Board as  additional content information type specifications are produced.",
+      "cardinality": "0..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP3",
+      "name": "Other Content Category",
+      "location": "mets[@TYPE=’OTHER’]/@csip:OTHERTYPE",
+      "description": "When the mets/@TYPE attribute has the value “OTHER” the mets/@csip:OTHERTYPE attribute MUST be used to declare the content category of the package/representation.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP4",
+      "name": "Content Information Type Specification",
+      "location": "mets/@csip:CONTENTINFORMATIONTYPE",
+      "description": "Used to declare the Content Information Type Specification used when creating the package. Legal values are defined in a fixed vocabulary. The attribute is mandatory for representation level METS documents. The vocabulary will evolve under the care of the DILCIS Board as additional Content Information Type Specifications are developed.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP5",
+      "name": "Other Content Information Type Specification",
+      "location": "mets[@csip:CONTENTINFORMATIONTYPE=’OTHER’]/@csip:OTHERCONTENTINFORMATIONTYPE",
+      "description": "When the mets/@csip:CONTENTINFORMATIONTYPE has the value 'OTHER' the mets/@csip:OTHERCONTENTINFORMATIONTYPE must state the content information type. ",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP6",
+      "name": "METS Profile",
+      "location": "mets/@PROFILE",
+      "description": "The URL of the METS profile that the information package conforms with. ",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP7",
+      "name": "Package creation date",
+      "location": "mets/metsHdr/@CREATEDATE",
+      "description": "mets/metsHdr/@CREATEDATE records the date the package was created.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP8",
+      "name": "Package last modification date",
+      "location": "mets/metsHdr/@LASTMODDATE",
+      "description": "mets/metsHdr/@LASTMODDATE is mandatory when the package has been modified.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [],
+        "warnings": [
+          "SKIPPED in  Root METS.xml  can't validate"
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP9",
+      "name": "OAIS Package type information",
+      "location": "mets/metsHdr/@csip:OAISPACKAGETYPE",
+      "description": "mets/metsHdr/@csip:OAISPACKAGETYPE is an additional CSIP attribute that declares the type of the IP.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP10",
+      "name": "Agent",
+      "location": "mets/metsHdr/agent",
+      "description": "A mandatory agent element records the software used to create the package. Other uses of agents may be described in any local implementations that extend the profile.",
+      "cardinality": "1..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP11",
+      "name": "Agent role",
+      "location": "mets/metsHdr/agent[@ROLE=’CREATOR’]",
+      "description": "The mandatory agent element MUST have a @ROLE attribute with the value 'CREATOR'",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP12",
+      "name": "Agent type",
+      "location": "mets/metsHdr/agent[@TYPE=’OTHER’]",
+      "description": "The mandatory agent element MUST have a @TYPE attribute with the value 'OTHER'.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP13",
+      "name": "Agent other type",
+      "location": "mets/metsHdr/agent[@OTHERTYPE=’SOFTWARE’]",
+      "description": "The mandatory agent element MUST have a @OTHERTYPE attribute with the value “SOFTWARE”.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP14",
+      "name": "Agent name",
+      "location": "mets/metsHdr/agent/name",
+      "description": "The mandatory agent’s name element records the name of the software tool used to create the IP.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP15",
+      "name": "Agent additional information",
+      "location": "mets/metsHdr/agent/note",
+      "description": "The mandatory agent’s note element records the version of the tool used to create the IP.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP16",
+      "name": "Classification of the agent additional information",
+      "location": "mets/metsHdr/agent/note[@csip:NOTETYPE=’SOFTWARE VERSION’]",
+      "description": "The mandatory agent element’s note child has a @csip:NOTETYPE attribute with a fixed value of “SOFTWARE VERSION”.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP17",
+      "name": "Descriptive metadata",
+      "location": "mets/dmdSec",
+      "description": "Must be used if descriptive metadata for the package content is available. Each descriptive metadata section ( <dmdSec> ) contains a single description and must be repeated for multiple descriptions, when available. It is possible to transfer metadata in a package using just the descriptive metadata section and/or administrative metadata section.",
+      "cardinality": "0..n",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP18",
+      "name": "Descriptive metadata identifier",
+      "location": "mets/dmdSec/@ID",
+      "description": "An xml:id identifier for the descriptive metadata section ( <dmdSec> ) used for internal package references. It must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP19",
+      "name": "Descriptive metadata creation date",
+      "location": "mets/dmdSec/@CREATED",
+      "description": "Creation date of the descriptive metadata in this section.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP20",
+      "name": "Status of the descriptive metadata",
+      "location": "mets/dmdSec/@STATUS",
+      "description": "Indicates the status of the package using a fixed vocabulary.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP21",
+      "name": "Reference to the document with the descriptive metadata",
+      "location": "mets/dmdSec/mdRef",
+      "description": "Reference to the descriptive metadata file located in the “metadata” section of the IP.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP22",
+      "name": "Type of locator",
+      "location": "mets/dmdSec/mdRef",
+      "description": "The locator type is always used with the value “URL” from the vocabulary in the attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP23",
+      "name": "Type of link",
+      "location": "mets/dmdSec/mdRef[@xlink:type=’simple’]",
+      "description": "Attribute used with the value “simple”. Value list is maintained by the xlink standard.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP24",
+      "name": "Resource location",
+      "location": "mets/dmdSec/mdRef/@xlink:href",
+      "description": "The actual location of the resource. This specification recommends recording a URL type filepath in this attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP25",
+      "name": "Type of metadata",
+      "location": "mets/dmdSec/mdRef/@MDTYPE",
+      "description": "Specifies the type of metadata in the referenced file. Values are taken from the list provided by the METS.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP26",
+      "name": "File mime type",
+      "location": "mets/dmdSec/mdRef/@MIMETYPE",
+      "description": "The IANA mime type of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP27",
+      "name": "File size",
+      "location": "mets/dmdSec/mdRef/@SIZE",
+      "description": "Size of the referenced file in bytes.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP28",
+      "name": "File creation date",
+      "location": "mets/dmdSec/mdRef/@CREATED",
+      "description": "The creation date of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP29",
+      "name": "File checksum",
+      "location": "mets/dmdSec/mdRef/@CHECKSUM",
+      "description": "The checksum of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP30",
+      "name": "File checksum type",
+      "location": "mets/dmdSec/mdRef/@CHECKSUMTYPE",
+      "description": "The type of checksum following the value list present in the METS-standard which has been used for calculating the checksum for the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP31",
+      "name": "Administrative metadata",
+      "location": "mets/amdSec",
+      "description": "If administrative / preservation metadata is available, it must be described using the administrative metadata section ( <amdSec> ) element. All administrative metadata is present in a single <amdSec> element. It is possible to transfer metadata in a package using just the descriptive metadata section and/or administrative metadata section.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP32",
+      "name": "Digital provenance metadata",
+      "location": "mets/amdSec/digiprovMD",
+      "description": "For recording information about preservation the standard PREMIS is used. It is mandatory to include one <digiprovMD> element for each piece of PREMIS metadata. The use if PREMIS in METS is following the recommendations in the 2017 version of PREMIS in METS Guidelines.",
+      "cardinality": "0..n",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP33",
+      "name": "Digital provenance metadata identifier",
+      "location": "mets/amdSec/digiprovMD/@ID",
+      "description": "An xml:id identifier for the digital provenance metadata section mets/amdSec/digiprovMD used for internal package references. It must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP34",
+      "name": "Status of the digital provenance metadata",
+      "location": "mets/amdSec/digiprovMD/@STATUS",
+      "description": "Indicates the status of the package using a fixed vocabulary.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP35",
+      "name": "Reference to the document with the digital provenance metadata",
+      "location": "mets/amdSec/digiprovMD/mdRef",
+      "description": "Reference to the digital provenance metadata file stored in the “metadata” section of the IP.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP36",
+      "name": "Reference to the document with the digital provenance metadata",
+      "location": "mets/amdSec/digiprovMD/mdRef[@LOCTYPE=’URL’]",
+      "description": "The locator type is always used with the value “URL” from the vocabulary in the attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP37",
+      "name": "Type of link",
+      "location": "mets/amdSec/digiprovMD/mdRef[@xlink:type=’simple’]",
+      "description": "The actual location of the resource. This specification recommends recording a URL type filepath within this attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP38",
+      "name": "Resource location",
+      "location": "mets/amdSec/digiprovMD/mdRef/@xlink:href",
+      "description": "The actual location of the resource. This specification recommends recording a URL type filepath within this attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP39",
+      "name": "Type of metadata",
+      "location": "mets/amdSec/digiprovMD/mdRef/@MDTYPE",
+      "description": "Specifies the type of metadata in the referenced file. Values are taken from the list provided by the METS.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP40",
+      "name": "File mime type",
+      "location": "mets/amdSec/digiprovMD/mdRef/@MIMETYPE",
+      "description": "The IANA mime type for the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP41",
+      "name": "File size",
+      "location": "mets/amdSec/digiprovMD/mdRef/@SIZE",
+      "description": "Size of the referenced file in bytes.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP42",
+      "name": "File creation date",
+      "location": "mets/amdSec/digiprovMD/mdRef/@CREATED",
+      "description": "Creation date of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP43",
+      "name": "File checksum",
+      "location": "mets/amdSec/digiprovMD/mdRef/@CHECKSUM",
+      "description": "The checksum of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP44",
+      "name": "File checksum type",
+      "location": "mets/amdSec/digiprovMD/mdRef/@CHECKSUMTYPE",
+      "description": "The type of checksum following the value list presentin the METS-standard which has been used for calculating the checksum for the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP45",
+      "name": "Rights metadata",
+      "location": "mets/amdSec/rightsMD",
+      "description": "A simple rights statement may be used to describe general permissions for the package. Individual representations should state their specific rights in their representation METS file. Available standards include RightsStatements.org , Europeana rights statements info , METS Rights Schema created and maintained by the METS Board, the rights part of PREMIS as well as own local rights statements in use.",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": [
+          "Individual representations should state their specific rights in their representation METS file (Root METS.xml)"
+        ]
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP46",
+      "name": "Rights metadata identifier",
+      "location": "mets/amdSec/rightsMD/@ID",
+      "description": "An xml:id identifier for the rights metadata section ( <rightsMD> ) used for internal package references. It must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP47",
+      "name": "Status of the rights metadata",
+      "location": "mets/amdSec/rightsMD/@STATUS",
+      "description": "Indicates the status of the package using a fixed vocabulary.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [],
+        "warnings": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP48",
+      "name": "Reference to the document with the rights metadata",
+      "location": "mets/amdSec/rightsMD/mdRef",
+      "description": "Reference to the rights metadata file stored in the “metadata” section of the IP.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [],
+        "warnings": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP49",
+      "name": "Type of locator",
+      "location": "mets/amdSec/rightsMD/mdRef[@LOCTYPE=’URL’]",
+      "description": "The locator type is always used with the value “URL” from the vocabulary in the attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP50",
+      "name": "Type of locator",
+      "location": "mets/amdSec/rightsMD/mdRef[@xlink:type=’simple’]",
+      "description": "Attribute used with the value “simple”. Value list is maintained by the xlink standard.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP51",
+      "name": "Resource location",
+      "location": "mets/amdSec/rightsMD/mdRef/@xlink:href",
+      "description": "The actual location of the resource. We recommend recording a URL type filepath within this attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP52",
+      "name": "Type of metadata",
+      "location": "mets/amdSec/rightsMD/mdRef/@MDTYPE",
+      "description": "Specifies the type of metadata in the referenced file. Value is taken from the list provided by the METS.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP53",
+      "name": "File mime type",
+      "location": "mets/amdSec/rightsMD/mdRef/@MIMETYPE",
+      "description": "The IANA mime type for the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP54",
+      "name": "File size",
+      "location": "mets/amdSec/rightsMD/mdRef/@SIZE",
+      "description": "Size of the referenced file in bytes.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP55",
+      "name": "File creation date",
+      "location": "mets/amdSec/rightsMD/mdRef/@CREATED",
+      "description": "Creation date of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP56",
+      "name": "File checksum",
+      "location": "mets/amdSec/rightsMD/mdRef/@CHECKSUM",
+      "description": "The checksum of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP57",
+      "name": "File checksum type",
+      "location": "mets/amdSec/rightsMD/mdRef/@CHECKSUMTYPE",
+      "description": "The type of checksum following the value list present in the METS-standard which has been used for calculating the checksum for the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED in Root METS.xml because mets/amdSec/rightsMD doesn't exist"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP58",
+      "name": "File section",
+      "location": "mets/fileSec",
+      "description": "The transferred content is placed in the file section in different file group elements, described in other requirements. Only a single file section ( <fileSec> ) element should be present. It is possible to transfer just descriptive metadata and/or administrative metadata without files placed in this section.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP59",
+      "name": "File section identifier",
+      "location": "mets/fileSec/@ID",
+      "description": "An xml:id identifier for the file section used for internal package references. It must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP60",
+      "name": "Documentation file group",
+      "location": "mets/fileSec/fileGrp[@USE=’Documentation’]",
+      "description": "All documentation pertaining to the transferred content is placed in one or more file group elements with mets/fileSec/fileGrp/@USE attribute value “Documentation”.",
+      "cardinality": "1..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP61",
+      "name": "Reference to administrative metadata",
+      "location": "mets/fileSec/fileGrp/@ADMID",
+      "description": "If administrative metadata has been provided at file group mets/fileSec/fileGrp level this attribute refers to its administrative metadata section by ID.",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP62",
+      "name": "Content Information Type Specification",
+      "location": "mets/fileSec/fileGrp[@USE=’Representations’]/@csip:CONTENTINFORMATIONTYPE",
+      "description": "An added attribute which states the name of the content information type specification used to create the package. The vocabulary will evolve under the curation of the DILCIS Board as additional content information type specifications are developed. This attribute is mandatory when the mets/fileSec/fileGrp/@USE attribute value is “Representations”. When the “Package type” value is “Mixed” and/or the file group describes a “Representation”, then this element states the content information type specification used for the file group.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP63",
+      "name": "Other Content Information Type Specification",
+      "location": "mets/fileSec/fileGrp[@csip:CONTENTINFORMATIONTYPE=’OTHER’]/@csip:OTHERCONTENTINFORMATIONTYPE",
+      "description": "When the mets/fileSec/fileGrp/@csip:CONTENTINFORMATIONTYPE attribute has the value “OTHER” the mets/fileSec/fileGrp/@csip:OTHERCONTENTINFORMATIONTYPE must state a value for the Content Information Type Specification used.",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP64",
+      "name": "Description of the use of the file group",
+      "location": "mets/fileSec/fileGrp/@USE",
+      "description": "The value in the mets/fileSec/fileGrp/@USE is the name of the whole folder structure to the data, e.g 'Documentation', 'Schemas',“Representations/preingest” or “Representations/submission/data”.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP65",
+      "name": "File group identifier",
+      "location": "mets/fileSec/fileGrp/@ID",
+      "description": "An xml:id identifier for the file group used for internal package references. It must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP66",
+      "name": "File",
+      "location": "mets/fileSec/fileGrp/file",
+      "description": "The file group ( <fileGrp> ) contains the file elements which describe the file objects.",
+      "cardinality": "1..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP67",
+      "name": "File identifier",
+      "location": "mets/fileSec/fileGrp/file/@ID",
+      "description": "A unique xml:id identifier for this file across the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP68",
+      "name": "File mimetype",
+      "location": "mets/fileSec/fileGrp/file/@MIMETYPE",
+      "description": "The IANA mime type for the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP69",
+      "name": "File size",
+      "location": "mets/fileSec/fileGrp/file/@SIZE",
+      "description": "Size of the referenced file in bytes.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP70",
+      "name": "File creation date",
+      "location": "mets/fileSec/fileGrp/file/@CREATED",
+      "description": "Creation date of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP71",
+      "name": "File checksum",
+      "location": "mets/fileSec/fileGrp/file/@CHECKSUM",
+      "description": "The checksum of the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP72",
+      "name": "File checksum type",
+      "location": "mets/fileSec/fileGrp/file/@CHECKSUMTYPE",
+      "description": "The type of checksum following the value list present in the METS-standard which has been used for calculating the checksum for the referenced file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP73",
+      "name": "File original identfication",
+      "location": "mets/fileSec/fileGrp/file/@OWNERID",
+      "description": "If an identifier for the file was supplied by the owner it can be recorded in this attribute.",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP74",
+      "name": "File reference to administrative metadata",
+      "location": "mets/fileSec/fileGrp/file/@ADMID",
+      "description": "If administrative metadata has been provided for the file this attribute refers to the file’s administrative metadata by ID.",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP75",
+      "name": "File reference to descriptive metadata",
+      "location": "mets/fileSec/fileGrp/file/@DMDID",
+      "description": "If descriptive metadata has been provided per file this attribute refers to the file’s descriptive metadata by ID.",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP76",
+      "name": "File locator reference",
+      "location": "mets/fileSec/fileGrp/file/FLocat",
+      "description": "The location of each external file must be defined by the file location <FLocat> element using the same rules as for referencing metadata files. All references to files should be made using the XLink href attribute and the file protocol using the relative location of the file.",
+      "cardinality": "0..1",
+      "level": "MAY",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP77",
+      "name": "Type of locator",
+      "location": "mets/fileSec/fileGrp/file/FLocat[@LOCTYPE=’URL’]",
+      "description": "The locator type is always used with the value “URL” from the vocabulary in the attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP78",
+      "name": "Type of link",
+      "location": "mets/fileSec/fileGrp/file/FLocat[@xlink:type=’simple’]",
+      "description": "Attribute used with the value “simple”. Value list is maintained by the xlink standard.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP72",
+      "id": "CSIP79",
+      "name": "Resource location",
+      "location": "mets/fileSec/fileGrp/file/FLocat/@xlink:href",
+      "description": "The actual location of the resource. We recommend recording a URL type filepath within this attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP80",
+      "name": "Structural description of the package",
+      "location": "mets/structMap",
+      "description": "The structural map <structMap> element is the only mandatory element in the METS. The <structMap> in the CSIP describes the highest logical structure of the IP. Each METS file must include ONE structural map <structMap> element used exactly as described here. Institutions can add their own additional custom structural maps as separate <structMap> sections.",
+      "cardinality": "1..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP81",
+      "name": "Type of structural description",
+      "location": "mets/structMap[@TYPE=’PHYSICAL’]",
+      "description": "The mets/structMap/@TYPE attribute must take the value 'PHYSICAL' from the vocabulary.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP82",
+      "name": "Name of the structural description",
+      "location": "mets/structMap[@LABEL=’CSIP’]",
+      "description": "The mets/structMap/@LABEL attribute value is set to “CSIP” from the vocabulary.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP83",
+      "name": "mets/structMap[@LABEL=’CSIP’]/@ID",
+      "location": "mets/structMap[@LABEL=’CSIP’]/@ID",
+      "description": "An xml:id identifier for the structural description (structMap) used for internal package references. It must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP84",
+      "name": "Main structural division",
+      "location": "mets/structMap[@LABEL=’CSIP’]/div",
+      "description": "The structural map comprises a single division.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP85",
+      "name": "Main structural division identifier",
+      "location": "mets/structMap[@LABEL=’CSIP’]/div/@ID",
+      "description": "Mandatory, xml:id identifier must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP86",
+      "name": "Main structural division label",
+      "location": "mets/structMap[@LABEL=’CSIP’]/div/@LABEL",
+      "description": "The package’s top-level structural division <div> element’s @LABEL attribute value must be identical to the package identifier, i.e. the same value as the mets/@OBJID attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP88",
+      "name": "Metadata division",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Metadata']",
+      "description": "The metadata referenced in the administrative and/or descriptive metadata section is described in the structural map with one sub division.When the transfer consists of only administrative and/or descriptive metadata this is the only sub division that occurs.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP89",
+      "name": "Metadata division identifier",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Metadata']/@ID",
+      "description": "Mandatory, xml:id identifier must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "Skipped in Root METS.xml because is validated later in CSIP106"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP90",
+      "name": "Metadata division label",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Metadata']",
+      "description": "The metadata division <div> element’s @LABEL attribute value must be “Metadata”. ",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP91",
+      "name": "Metadata division administrative metadata referencing",
+      "location": "mets/structMap[@LABEL='CSIP'/div/div[@LABEL='Metadata']/@ADMID",
+      "description": "When there is administrative metadata and the amdSec is present, all administrative metadata MUST be referenced via the administrative sections different identifiers.All of the <amdSec> identifiers are listed in a single @ADMID using spaces as delimiters.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP92",
+      "name": "Metadata division descriptive metadata referencing",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Metadata']/@DMDID",
+      "description": "When there are descriptive metadata and one or more dmdSec is present, all descriptive metadata MUST be referenced via the descriptive section identifiers. Every <dmdSec> identifier is listed in a single @DMDID attribute using spaces as delimiters.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP93",
+      "name": "Documentation division",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Documentation']",
+      "description": "The documentation referenced in the file section file groups is described in the structural map with one sub division.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP94",
+      "name": "Documentation division identifier",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Documentation']/@ID",
+      "description": "Mandatory, xml:id identifier must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "Skipped in Root METS.xml because is validated later in CSIP106"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP95",
+      "name": "Documentation division label",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Documentation']",
+      "description": "The documentation division <div> element in the package uses the value 'Documentation' from the vocabulary as the value for the @LABEL attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP96",
+      "name": "Documentation file referencing",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Documentation']/fptr",
+      "description": "All file groups containing documentation described in the package are referenced via the relevant file group identifiers. There MUST be one file group reference per <fptr> element.",
+      "cardinality": "0..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP97",
+      "name": "Schema division",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Schemas']",
+      "description": "The schemas referenced in the file section file groups are described in the structural map within a single sub-division.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP98",
+      "name": "Schema division identifier",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Schemas']/@ID",
+      "description": "Mandatory, xml:id identifier must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "Skipped in Root METS.xml because is validated later in CSIP106"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP99",
+      "name": "Schema division label",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Schemas']",
+      "description": "The schema division <div> element’s @LABEL attribute has the value “Schemas” from the vocabulary. ",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP100",
+      "name": "Schema file reference",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Schemas']/fptr",
+      "description": "All file groups containing schemas described in the package are referenced via the relevant file group identifiers. One file group reference per fptr-element",
+      "cardinality": "0..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP101",
+      "name": "Content division",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Representations']",
+      "description": "When no representations are present the content referenced in the file section file group with @USE attribute value “Representations” is described in the structural map as a single sub division.",
+      "cardinality": "0..1",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP102",
+      "name": "Content division identifier",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Representations']/@ID",
+      "description": "Mandatory, xml:id identifier must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "Skipped in Root METS.xml because is validated later in CSIP106"
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP103",
+      "name": "Content division label",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Representations']",
+      "description": "The package’s content division <div> element must have the @LABEL attribute value “Representations”, taken from the vocabulary.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP104",
+      "name": "Content division file references",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Representations']/fptr",
+      "description": "All file groups containing content described in the package are referenced via the relevant file group identifiers. One file group reference per fptr-element.",
+      "cardinality": "0..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP105",
+      "name": "Representation division",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div",
+      "description": "When a package consists of multiple representations, each described by a representation level METS.xml document, there is a discrete representation div element for each representation. Each representation div references the representation level METS.xml document, documenting the structure of the package and its constituent representations.",
+      "cardinality": "0..n",
+      "level": "SHOULD",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP106",
+      "name": "Representations division identifier",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div/@ID",
+      "description": "Mandatory, xml:id identifier must be unique within the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP107",
+      "name": "Representations division label",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div/@LABEL",
+      "description": "The package’s representation division <div> element @LABEL attribute value must be the path to the representation level METS document. This requirement gives the same value to be used as the requirement named “File group identifier” (CSIP64) ",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP108",
+      "name": "Representations division file referencing",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div/mptr/@xlink:title",
+      "description": "The file group containing the files described in the package are referenced via the relevant file group identifier. Related to the requirements CSIP114 which describes the “Representations” file group and CSIP65 which describes the file group identifier.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP109",
+      "name": "Representation METS pointer",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div/mptr",
+      "description": "The division <div> of the specific representation includes one occurrence of the METS pointer <mptr> element, pointing to the appropriate representation METS file.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP110",
+      "name": "Resource location",
+      "location": "mets/structMap/div/div/mptr/@xlink:href",
+      "description": "The actual location of the resource. We recommend recording a URL type filepath within this attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP111",
+      "name": "Type of link",
+      "location": "mets/structMap/div/div/mptr[@xlink:type='simple']",
+      "description": "Attribute used with the value “simple”. Value list is maintained by the xlink standard.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP112",
+      "name": "Type of locator",
+      "location": "mets/structMap/div/div/mptr[@LOCTYPE='URL']",
+      "description": "The locator type is always used with the value “URL” from the vocabulary in the attribute.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP113",
+      "name": "Schema file group",
+      "location": "mets/fileSec/fileGrp[@USE=’Schemas’]",
+      "description": "All XML schemas used in the information package should be referenced from one or more file groups with mets/fileSec/fileGrp/@USE attribute value ",
+      "cardinality": "1..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP114",
+      "name": "Representations file group",
+      "location": "mets/fileSec/fileGrp[@USE=’Representations’]",
+      "description": "A pointer to the METS document describing the representation or pointers to the content being transferred must be present in one or more file groups with mets/fileSec/fileGrp/@USE attribute value “Representations”.See also: File group names",
+      "cardinality": "1..n",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP116",
+      "name": "Documentation file group reference pointer",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Documentation']/fptr/@FILEID",
+      "description": "A reference, by ID, to the “Documentation” file group. Related to the requirements CSIP60 which describes the “Documentation” file group and CSIP65 which describes the file group identifier.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP117",
+      "name": "Package header",
+      "location": "mets/metsHdr",
+      "description": "General element for describing the package.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP118",
+      "name": "Schema file group reference",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Schemas']/fptr/@FILEID",
+      "description": "The pointer to the identifier for the “Schema” file group. Related to the requirements CSIP113 which describes the “Schema” file group and CSIP65 which describes the file group identifier.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "CSIP119",
+      "name": "Content division file group references",
+      "location": "mets/structMap[@LABEL='CSIP']/div/div[@LABEL='Representations']/fptr/@FILEID",
+      "description": "The pointer to the identifier for the “Representations” file group. Related to the requirements CSIP114 which describes the “Representations” file group and CSIP65 which describes the file group identifier.",
+      "cardinality": "1..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "AIP-2.0.4",
+      "id": "AIP9",
+      "name": "File ID",
+      "location": "file/@ID",
+      "description": "Identifier of a file which is part of the AIP File identifier; must be unique and start with the prefix ID",
+      "cardinality": "0..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "PASSED",
+        "issues": [],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "AIP-2.0.4",
+      "id": "AIP10",
+      "name": "File ADMID",
+      "location": "file/@ADMID",
+      "description": "Used to link it to relevant administrative metadata sections that relate to the digital object described. Can be a white space separated list of identifiers.",
+      "cardinality": "0..n",
+      "level": "MAY",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [],
+        "warnings": [],
+        "notes": [
+          "SKIPPED because it has been validated in CSIP74"
+        ]
+      }
+    },
+    {
+      "specification": "AIP-2.0.4",
+      "id": "AIP11",
+      "name": "File CHECKSUMTYPE",
+      "location": "file/@CHECKSUMTYPE",
+      "description": "Hash-sum calculator algorithm",
+      "cardinality": "0..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED because it has been validated in CSIP72 "
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "AIP-2.0.4",
+      "id": "AIP12",
+      "name": "File CHECKSUM",
+      "location": "file/@CHECKSUM",
+      "description": "Hash-sum",
+      "cardinality": "0..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED because it has been validated in CSIP71 "
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "AIP-2.0.4",
+      "id": "AIP13",
+      "name": "File CREATED",
+      "location": "file/@CREATED",
+      "description": "Date when the file entry was created.",
+      "cardinality": "0..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED because it has been validated in CSIP70 "
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "CSIP-2.0.4",
+      "id": "AIP14",
+      "name": "File SIZE",
+      "location": "file/@SIZE",
+      "description": "Size of the file in bytes.",
+      "cardinality": "0..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED because it has been validated in CSIP69 "
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    },
+    {
+      "specification": "AIP-2.0.4",
+      "id": "AIP15",
+      "name": "File MIMETYPE",
+      "location": "file/@MIMETYPE",
+      "description": "Mime-type.",
+      "cardinality": "0..1",
+      "level": "MUST",
+      "testing": {
+        "outcome": "SKIPPED",
+        "issues": [
+          "SKIPPED because it has been validated in CSIP68 "
+        ],
+        "warnings": [],
+        "notes": []
+      }
+    }
+  ],
+  "summary": {
+    "success": 110,
+    "warnings": 4,
+    "errors": 0,
+    "skipped": 24,
+    "notes": 3,
+    "result": "VALID"
+  }
+}
